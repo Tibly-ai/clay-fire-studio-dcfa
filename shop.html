@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop Handmade Pottery | Clay & Fire Studio</title>
+<meta name="description" content="Browse our gallery of handthrown mugs, bowls, vases, and serving pieces. Each item is wheel-thrown, glazed, and fired by hand in small batches.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-brand-50: #FAF6F1;
+  --color-brand-100: #F3E9DD;
+  --color-brand-200: #E6D2BB;
+  --color-brand-300: #D9BA99;
+  --color-brand-400: #CBA277;
+  --color-brand-500: #A67C52;
+  --color-brand-600: #8F6A44;
+  --color-brand-700: #785837;
+  --color-brand-800: #61462B;
+  --color-brand-900: #4A351F;
+
+  --color-accent-50: #FBF3EA;
+  --color-accent-100: #F5E4D0;
+  --color-accent-200: #EBCBA6;
+  --color-accent-300: #E1B27C;
+  --color-accent-400: #D4A574;
+  --color-accent-500: #C68F52;
+  --color-accent-600: #A8763E;
+  --color-accent-700: #8A5F32;
+  --color-accent-800: #6C4926;
+  --color-accent-900: #4E341A;
+
+  --color-surface: #FAFAF8;
+  --color-surface-alt: #F5F1ED;
+  --color-ink: #3D3D3A;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Lato", sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block rounded-md bg-brand-600 px-6 py-3 font-body text-sm tracking-wide text-surface transition-colors duration-200 hover:bg-brand-700;
+  }
+  .btn-secondary {
+    @apply inline-block rounded-md border border-brand-400 bg-transparent px-6 py-3 font-body text-sm tracking-wide text-ink transition-colors duration-200 hover:bg-brand-50;
+  }
+  .card {
+    @apply rounded-lg bg-surface-alt p-6 shadow-sm;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="bg-surface border-b border-brand-100">
+  <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-5 sm:flex-row">
+    <a href="/" class="font-display text-2xl tracking-wide text-ink">Clay &amp; Fire Studio</a>
+    <nav aria-label="Primary">
+      <ul class="flex flex-wrap items-center justify-center gap-6 font-body text-sm uppercase tracking-widest text-ink/80">
+        <li><a href="/" class="transition-colors hover:text-brand-600">Home</a></li>
+        <li><a href="/shop" class="transition-colors hover:text-brand-600">Shop</a></li>
+        <li><a href="/about" class="transition-colors hover:text-brand-600">About</a></li>
+        <li><a href="/contact" class="transition-colors hover:text-brand-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:hero -->
+<section class="bg-surface" data-block="hero">
+  <div class="mx-auto max-w-6xl px-6 py-16 sm:py-20 text-center">
+    <p class="font-body text-xs uppercase tracking-[0.3em] text-brand-600">The Collection</p>
+    <h1 class="mt-4 font-display text-4xl sm:text-5xl text-ink">Pieces Made to Live With</h1>
+    <p class="mx-auto mt-5 max-w-2xl font-body text-base sm:text-lg leading-relaxed text-ink/70">
+      Every mug, bowl, and vase in this shop passed through our hands twice — once on the wheel, once at the kiln.
+      Small batches, natural glazes, and the occasional imperfection that proves it's real.
+    </p>
+  </div>
+</section>
+<!-- /block:hero -->
+<!-- block:gallery -->
+<section class="bg-surface-alt" data-block="gallery">
+  <div class="mx-auto max-w-6xl px-6 py-16">
+    <div class="flex flex-wrap items-center justify-center gap-3 mb-12 font-body text-sm uppercase tracking-widest">
+      <span class="rounded-md bg-brand-600 px-4 py-2 text-surface">All Pieces</span>
+      <span class="rounded-md border border-brand-300 px-4 py-2 text-ink/70 transition-colors hover:bg-brand-50 hover:text-ink">Mugs</span>
+      <span class="rounded-md border border-brand-300 px-4 py-2 text-ink/70 transition-colors hover:bg-brand-50 hover:text-ink">Bowls</span>
+      <span class="rounded-md border border-brand-300 px-4 py-2 text-ink/70 transition-colors hover:bg-brand-50 hover:text-ink">Vases</span>
+      <span class="rounded-md border border-brand-300 px-4 py-2 text-ink/70 transition-colors hover:bg-brand-50 hover:text-ink">Serveware</span>
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <article class="card overflow-hidden p-0 group">
+        <div class="aspect-square overflow-hidden">
+          <img src="/images/shop/mug-ash-glaze.jpg" alt="Handthrown stoneware mug with an ash glaze finish" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl text-ink">Ash Glaze Mug</h3>
+          <p class="mt-2 font-body text-sm leading-relaxed text-ink/70">12oz stoneware, wheel-thrown with a soft matte ash glaze. Holds its warmth.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-body text-lg text-ink">$38</span>
+            <button type="button" class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card overflow-hidden p-0 group">
+        <div class="aspect-square overflow-hidden">
+          <img src="/images/shop/bowl-terracotta.jpg" alt="Wide terracotta serving bowl with hand-carved rim" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl text-ink">Terracotta Serving Bowl</h3>
+          <p class="mt-2 font-body text-sm leading-relaxed text-ink/70">Wide-lipped bowl with a hand-carved rim, finished in warm terracotta.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-body text-lg text-ink">$64</span>
+            <button type="button" class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card overflow-hidden p-0 group">
+        <div class="aspect-square overflow-hidden">
+          <img src="/images/shop/vase-sand.jpg" alt="Tall sand-colored ceramic vase with speckled texture" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl text-ink">Sand Speckle Vase</h3>
+          <p class="mt-2 font-body text-sm leading-relaxed text-ink/70">Tall vase in a speckled stoneware clay, left unglazed for a raw, sandy texture.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-body text-lg text-ink">$86</span>
+            <button type="button" class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card overflow-hidden p-0 group">
+        <div class="aspect-square overflow-hidden">
+          <img src="/images/shop/plate-set.jpg" alt="Set of three stacked earthenware dinner plates" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl text-ink">Earthenware Plate Set</h3>
+          <p class="mt-2 font-body text-sm leading-relaxed text-ink/70">Set of three dinner plates in a warm oatmeal glaze, each slightly its own.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-body text-lg text-ink">$110</span>
+            <button type="button" class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card overflow-hidden p-0 group">
+        <div class="aspect-square overflow-hidden">
+          <img src="/images/shop/mug-clay.jpg" alt="Unglazed raw clay mug with visible throwing lines" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl text-ink">Raw Clay Mug</h3>
+          <p class="mt-2 font-body text-sm leading-relaxed text-ink/70">Unglazed exterior, glazed interior — you can feel every ridge from the wheel.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-body text-lg text-ink">$34</span>
+            <button type="button" class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card overflow-hidden p-0 group">
+        <div class="aspect-square overflow-hidden">
+          <img src="/images/shop/bowl-nesting.jpg" alt="Set of three nesting bowls in graduated sizes" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl text-ink">Nesting Bowl Trio</h3>
+          <p class="mt-2 font-body text-sm leading-relaxed text-ink/70">Three graduated bowls, glazed in soft caramel tones, made to stack.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-body text-lg text-ink">$92</span>
+            <button type="button" class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="mt-10 text-center font-body text-sm text-ink/60">
+      New pieces are added to the shop as each kiln load cools — check back often, or join the list below to hear first.
+    </p>
+  </div>
+</section>
+<!-- /block:gallery -->
+<!-- block:featured -->
+<section class="bg-surface" data-block="featured">
+  <div class="mx-auto grid max-w-6xl items-center gap-10 px-6 py-16 sm:py-20 lg:grid-cols-2">
+    <div class="order-2 lg:order-1">
+      <p class="font-body text-xs uppercase tracking-[0.3em] text-brand-600">Studio Favorite</p>
+      <h2 class="mt-3 font-display text-3xl sm:text-4xl text-ink">The Riverbend Carafe</h2>
+      <p class="mt-4 font-body text-base leading-relaxed text-ink/70">
+        Our most-requested piece: a hand-pulled carafe with a matching cup, glazed in a warm honey tone that catches
+        morning light beautifully. Each set is thrown individually, so no two carafes pour quite the same.
+      </p>
+      <div class="mt-6 flex items-center gap-6">
+        <span class="font-display text-2xl text-ink">$78</span>
+        <button type="button" class="btn">Add to Cart</button>
+      </div>
+    </div>
+    <div class="order-1 aspect-[4/5] overflow-hidden rounded-lg lg:order-2">
+      <img src="/images/shop/carafe-honey.jpg" alt="Honey-glazed ceramic carafe and cup set on a wooden table" class="h-full w-full object-cover">
+    </div>
+  </div>
+</section>
+<!-- /block:featured -->
+<!-- block:newsletter -->
+<section class="bg-surface-alt" data-block="newsletter">
+  <div class="mx-auto max-w-2xl px-6 py-16 sm:py-20 text-center">
+    <h2 class="font-display text-3xl text-ink">First to Know, First to Choose</h2>
+    <p class="mt-4 font-body text-base leading-relaxed text-ink/70">
+      Kiln loads are small and pieces don't last long. Leave your email and we'll let you know when a new batch
+      is glazed, fired, and ready — usually a few days before it hits the shop.
+    </p>
+    <form method="POST" action="https://api.tibly.ai/api/public/site-forms" class="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row">
+      <input type="hidden" name="_page" value="/shop">
+      <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label for="shop-email" class="sr-only">Email address</label>
+      <input id="shop-email" type="email" name="email" required placeholder="you@example.com"
+        class="w-full flex-1 rounded-md border border-brand-300 bg-surface px-4 py-3 font-body text-sm text-ink placeholder:text-ink/40 focus:border-brand-500 focus:outline-none">
+      <button type="submit" class="btn whitespace-nowrap">Join the List</button>
+    </form>
+    <p class="mt-3 font-body text-xs text-ink/50">No spam, just fresh clay news. Unsubscribe any time.</p>
+  </div>
+</section>
+<!-- /block:newsletter -->
+<!-- block:footer -->
+<footer class="bg-surface-alt border-t border-brand-100">
+  <div class="mx-auto grid max-w-6xl gap-10 px-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
+    <div>
+      <p class="font-display text-xl text-ink">Clay &amp; Fire Studio</p>
+      <p class="mt-3 max-w-xs font-body text-sm leading-relaxed text-ink/70">
+        Handthrown pottery, fired slow and finished by hand in our small studio.
+      </p>
+    </div>
+    <div class="font-body text-sm text-ink/80">
+      <p class="mb-3 font-display text-base text-ink">Visit &amp; Contact</p>
+      <p>123 Kiln Lane, Riverbend, OR 97001</p>
+      <p class="mt-1">hello@clayandfirestudio.com</p>
+      <p class="mt-1">(555) 012-3456</p>
+    </div>
+    <nav aria-label="Footer">
+      <p class="mb-3 font-display text-base text-ink">Explore</p>
+      <ul class="space-y-2 font-body text-sm text-ink/80">
+        <li><a href="/" class="transition-colors hover:text-brand-600">Home</a></li>
+        <li><a href="/shop" class="transition-colors hover:text-brand-600">Shop</a></li>
+        <li><a href="/about" class="transition-colors hover:text-brand-600">About</a></li>
+        <li><a href="/contact" class="transition-colors hover:text-brand-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-brand-100 px-6 py-5 text-center font-body text-xs text-ink/60">
+    &copy; 2024 Clay &amp; Fire Studio. All pieces made by hand, imperfections included.
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
