@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact & Custom Orders | Clay & Fire Studio</title>
+<meta name="description" content="Get in touch with Clay & Fire Studio — ask a question, inquire about a custom piece, or join our newsletter for new releases and studio news.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-brand-50: #FAF6F1;
+  --color-brand-100: #F3E9DD;
+  --color-brand-200: #E6D2BB;
+  --color-brand-300: #D9BA99;
+  --color-brand-400: #CBA277;
+  --color-brand-500: #A67C52;
+  --color-brand-600: #8F6A44;
+  --color-brand-700: #785837;
+  --color-brand-800: #61462B;
+  --color-brand-900: #4A351F;
+
+  --color-accent-50: #FBF3EA;
+  --color-accent-100: #F5E4D0;
+  --color-accent-200: #EBCBA6;
+  --color-accent-300: #E1B27C;
+  --color-accent-400: #D4A574;
+  --color-accent-500: #C68F52;
+  --color-accent-600: #A8763E;
+  --color-accent-700: #8A5F32;
+  --color-accent-800: #6C4926;
+  --color-accent-900: #4E341A;
+
+  --color-surface: #FAFAF8;
+  --color-surface-alt: #F5F1ED;
+  --color-ink: #3D3D3A;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Lato", sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block rounded-md bg-brand-600 px-6 py-3 font-body text-sm tracking-wide text-surface transition-colors duration-200 hover:bg-brand-700;
+  }
+  .btn-secondary {
+    @apply inline-block rounded-md border border-brand-400 bg-transparent px-6 py-3 font-body text-sm tracking-wide text-ink transition-colors duration-200 hover:bg-brand-50;
+  }
+  .card {
+    @apply rounded-lg bg-surface-alt p-6 shadow-sm;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="bg-surface border-b border-brand-100">
+  <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-5 sm:flex-row">
+    <a href="/" class="font-display text-2xl tracking-wide text-ink">Clay &amp; Fire Studio</a>
+    <nav aria-label="Primary">
+      <ul class="flex flex-wrap items-center justify-center gap-6 font-body text-sm uppercase tracking-widest text-ink/80">
+        <li><a href="/" class="transition-colors hover:text-brand-600">Home</a></li>
+        <li><a href="/shop" class="transition-colors hover:text-brand-600">Shop</a></li>
+        <li><a href="/about" class="transition-colors hover:text-brand-600">About</a></li>
+        <li><a href="/contact" class="transition-colors hover:text-brand-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:hero -->
+<section class="bg-surface-alt border-b border-brand-100" data-block="hero">
+  <div class="mx-auto max-w-6xl px-6 py-16 text-center sm:py-20">
+    <p class="font-body text-xs uppercase tracking-[0.3em] text-brand-600">Say Hello</p>
+    <h1 class="mt-4 font-display text-4xl leading-tight text-ink sm:text-5xl">We'd Love to Hear From You</h1>
+    <p class="mx-auto mt-5 max-w-2xl font-body text-base leading-relaxed text-ink/70 sm:text-lg">
+      Questions about a piece, a custom order in mind, or just want to say hi — reach out below.
+      We read every message and reply within a couple of days.
+    </p>
+  </div>
+</section>
+<!-- /block:hero -->
+<!-- block:contact-form -->
+<section class="bg-surface" data-block="contact-form">
+  <div class="mx-auto grid max-w-6xl gap-12 px-6 py-16 sm:py-20 lg:grid-cols-2">
+    <div>
+      <h2 class="font-display text-3xl text-ink">Send a Message</h2>
+      <p class="mt-3 font-body text-sm leading-relaxed text-ink/70">
+        Whether it's a question about care instructions, an order update, or general feedback,
+        drop us a note and we'll get back to you personally.
+      </p>
+
+      <form method="POST" action="https://api.tibly.ai/api/public/site-forms" class="mt-8 space-y-5">
+        <input type="hidden" name="_page" value="/contact">
+        <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div>
+          <label for="contact-name" class="mb-2 block font-body text-sm text-ink/80">Name</label>
+          <input id="contact-name" type="text" name="name" required
+            class="w-full rounded-md border border-brand-200 bg-surface px-4 py-3 font-body text-sm text-ink placeholder:text-ink/40 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+            placeholder="Your full name">
+        </div>
+
+        <div>
+          <label for="contact-email" class="mb-2 block font-body text-sm text-ink/80">Email</label>
+          <input id="contact-email" type="email" name="email" required
+            class="w-full rounded-md border border-brand-200 bg-surface px-4 py-3 font-body text-sm text-ink placeholder:text-ink/40 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+            placeholder="you@example.com">
+        </div>
+
+        <div>
+          <label for="contact-message" class="mb-2 block font-body text-sm text-ink/80">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required
+            class="w-full rounded-md border border-brand-200 bg-surface px-4 py-3 font-body text-sm text-ink placeholder:text-ink/40 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+            placeholder="How can we help?"></textarea>
+        </div>
+
+        <button type="submit" class="btn w-full sm:w-auto">Send Message</button>
+      </form>
+    </div>
+
+    <div class="flex flex-col justify-between gap-8">
+      <div class="card">
+        <p class="font-display text-xl text-ink">Visit the Studio</p>
+        <p class="mt-3 font-body text-sm leading-relaxed text-ink/70">
+          123 Kiln Lane, Riverbend, OR 97001<br>
+          Open Wednesday–Saturday, 10am–5pm
+        </p>
+        <p class="mt-4 font-body text-sm text-ink/70">
+          hello@clayandfirestudio.com<br>
+          (555) 012-3456
+        </p>
+      </div>
+
+      <div class="overflow-hidden rounded-lg border border-brand-100">
+        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=900&q=80"
+          alt="Clay & Fire Studio's workshop table with tools and drying pottery"
+          class="h-64 w-full object-cover sm:h-80">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:contact-form -->
+<!-- block:custom-order -->
+<section class="bg-surface-alt border-y border-brand-100" data-block="custom-order">
+  <div class="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-display text-3xl text-ink">Custom Order Inquiries</h2>
+      <p class="mt-3 font-body text-sm leading-relaxed text-ink/70">
+        Dreaming of a one-of-a-kind piece — a dinnerware set, a wedding gift, or something
+        made to fit a particular space? Tell us about it and we'll follow up with options,
+        timeline, and pricing.
+      </p>
+    </div>
+
+    <form method="POST" action="https://api.tibly.ai/api/public/site-forms" class="mx-auto mt-10 max-w-2xl space-y-5">
+      <input type="hidden" name="_page" value="/contact">
+      <input type="hidden" name="inquiry_type" value="custom-order">
+      <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="grid gap-5 sm:grid-cols-2">
+        <div>
+          <label for="custom-name" class="mb-2 block font-body text-sm text-ink/80">Name</label>
+          <input id="custom-name" type="text" name="name" required
+            class="w-full rounded-md border border-brand-200 bg-surface px-4 py-3 font-body text-sm text-ink placeholder:text-ink/40 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+            placeholder="Your full name">
+        </div>
+        <div>
+          <label for="custom-email" class="mb-2 block font-body text-sm text-ink/80">Email</label>
+          <input id="custom-email" type="email" name="email" required
+            class="w-full rounded-md border border-brand-200 bg-surface px-4 py-3 font-body text-sm text-ink placeholder:text-ink/40 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+            placeholder="you@example.com">
+        </div>
+      </div>
+
+      <div>
+        <label for="custom-type" class="mb-2 block font-body text-sm text-ink/80">What are you envisioning?</label>
+        <select id="custom-type" name="piece_type"
+          class="w-full rounded-md border border-brand-200 bg-surface px-4 py-3 font-body text-sm text-ink focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500">
+          <option value="">Select an option</option>
+          <option value="dinnerware">Dinnerware set</option>
+          <option value="vase-decor">Vase or decor piece</option>
+          <option value="gift">Gift or wedding registry</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="custom-details" class="mb-2 block font-body text-sm text-ink/80">Tell us more</label>
+        <textarea id="custom-details" name="message" rows="5"
+          class="w-full rounded-md border border-brand-200 bg-surface px-4 py-3 font-body text-sm text-ink placeholder:text-ink/40 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+          placeholder="Quantity, size, glaze color, timeline, budget — anything that helps us understand your vision."></textarea>
+      </div>
+
+      <button type="submit" class="btn w-full sm:w-auto">Submit Custom Inquiry</button>
+    </form>
+  </div>
+</section>
+<!-- /block:custom-order -->
+<!-- block:newsletter -->
+<section class="bg-surface" data-block="newsletter">
+  <div class="mx-auto max-w-3xl px-6 py-16 text-center sm:py-20">
+    <h2 class="font-display text-3xl text-ink">Join Our Newsletter</h2>
+    <p class="mx-auto mt-3 max-w-xl font-body text-sm leading-relaxed text-ink/70">
+      New glaze releases, studio seconds sales, and behind-the-scenes notes from the wheel —
+      delivered a few times a month, never more.
+    </p>
+
+    <form method="POST" action="https://api.tibly.ai/api/public/site-forms"
+      class="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row">
+      <input type="hidden" name="_page" value="/contact">
+      <input type="hidden" name="inquiry_type" value="newsletter">
+      <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <label for="newsletter-email" class="sr-only">Email address</label>
+      <input id="newsletter-email" type="email" name="email" required
+        class="flex-1 rounded-md border border-brand-200 bg-surface px-4 py-3 font-body text-sm text-ink placeholder:text-ink/40 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+        placeholder="you@example.com">
+      <button type="submit" class="btn whitespace-nowrap">Subscribe</button>
+    </form>
+    <p class="mt-3 font-body text-xs text-ink/50">No spam, ever. Unsubscribe anytime.</p>
+  </div>
+</section>
+<!-- /block:newsletter -->
+<!-- block:footer -->
+<footer class="bg-surface-alt border-t border-brand-100">
+  <div class="mx-auto grid max-w-6xl gap-10 px-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
+    <div>
+      <p class="font-display text-xl text-ink">Clay &amp; Fire Studio</p>
+      <p class="mt-3 max-w-xs font-body text-sm leading-relaxed text-ink/70">
+        Handthrown pottery, fired slow and finished by hand in our small studio.
+      </p>
+    </div>
+    <div class="font-body text-sm text-ink/80">
+      <p class="mb-3 font-display text-base text-ink">Visit &amp; Contact</p>
+      <p>123 Kiln Lane, Riverbend, OR 97001</p>
+      <p class="mt-1">hello@clayandfirestudio.com</p>
+      <p class="mt-1">(555) 012-3456</p>
+    </div>
+    <nav aria-label="Footer">
+      <p class="mb-3 font-display text-base text-ink">Explore</p>
+      <ul class="space-y-2 font-body text-sm text-ink/80">
+        <li><a href="/" class="transition-colors hover:text-brand-600">Home</a></li>
+        <li><a href="/shop" class="transition-colors hover:text-brand-600">Shop</a></li>
+        <li><a href="/about" class="transition-colors hover:text-brand-600">About</a></li>
+        <li><a href="/contact" class="transition-colors hover:text-brand-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-brand-100 px-6 py-5 text-center font-body text-xs text-ink/60">
+    &copy; 2024 Clay &amp; Fire Studio. All pieces made by hand, imperfections included.
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
