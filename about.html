@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | Clay & Fire Studio</title>
+<meta name="description" content="Discover the story behind Clay & Fire Studio — a small pottery studio devoted to slow firing, honest materials, and handthrown ceramics made to last.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-brand-50: #FAF6F1;
+  --color-brand-100: #F3E9DD;
+  --color-brand-200: #E6D2BB;
+  --color-brand-300: #D9BA99;
+  --color-brand-400: #CBA277;
+  --color-brand-500: #A67C52;
+  --color-brand-600: #8F6A44;
+  --color-brand-700: #785837;
+  --color-brand-800: #61462B;
+  --color-brand-900: #4A351F;
+
+  --color-accent-50: #FBF3EA;
+  --color-accent-100: #F5E4D0;
+  --color-accent-200: #EBCBA6;
+  --color-accent-300: #E1B27C;
+  --color-accent-400: #D4A574;
+  --color-accent-500: #C68F52;
+  --color-accent-600: #A8763E;
+  --color-accent-700: #8A5F32;
+  --color-accent-800: #6C4926;
+  --color-accent-900: #4E341A;
+
+  --color-surface: #FAFAF8;
+  --color-surface-alt: #F5F1ED;
+  --color-ink: #3D3D3A;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Lato", sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block rounded-md bg-brand-600 px-6 py-3 font-body text-sm tracking-wide text-surface transition-colors duration-200 hover:bg-brand-700;
+  }
+  .btn-secondary {
+    @apply inline-block rounded-md border border-brand-400 bg-transparent px-6 py-3 font-body text-sm tracking-wide text-ink transition-colors duration-200 hover:bg-brand-50;
+  }
+  .card {
+    @apply rounded-lg bg-surface-alt p-6 shadow-sm;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="bg-surface border-b border-brand-100">
+  <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-5 sm:flex-row">
+    <a href="/" class="font-display text-2xl tracking-wide text-ink">Clay &amp; Fire Studio</a>
+    <nav aria-label="Primary">
+      <ul class="flex flex-wrap items-center justify-center gap-6 font-body text-sm uppercase tracking-widest text-ink/80">
+        <li><a href="/" class="transition-colors hover:text-brand-600">Home</a></li>
+        <li><a href="/shop" class="transition-colors hover:text-brand-600">Shop</a></li>
+        <li><a href="/about" class="transition-colors hover:text-brand-600">About</a></li>
+        <li><a href="/contact" class="transition-colors hover:text-brand-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:hero -->
+<section class="bg-surface" data-block="hero">
+  <div class="mx-auto grid max-w-6xl items-center gap-10 px-6 py-20 lg:grid-cols-2 lg:py-28">
+    <div>
+      <p class="font-body text-sm uppercase tracking-widest text-brand-600">Our Story</p>
+      <h1 class="mt-4 font-display text-4xl leading-tight text-ink sm:text-5xl">
+        Made slowly, by hand, with clay that remembers where it came from.
+      </h1>
+      <p class="mt-6 max-w-lg font-body text-base leading-relaxed text-ink/70">
+        Clay & Fire Studio began as a single wheel in a converted garage and grew into a
+        small workshop where every piece still passes through one set of hands from
+        raw clay to finished glaze.
+      </p>
+    </div>
+    <div class="overflow-hidden rounded-lg bg-surface-alt">
+      <img
+        src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=80"
+        alt="Potter shaping a clay vessel on a wheel in warm studio light"
+        class="h-full w-full object-cover"
+        loading="lazy"
+      >
+    </div>
+  </div>
+</section>
+<!-- /block:hero -->
+<!-- block:story -->
+<section class="bg-surface-alt" data-block="story">
+  <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:py-24">
+    <div class="order-2 overflow-hidden rounded-lg lg:order-1">
+      <img
+        src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1200&q=80"
+        alt="Rows of unfired ceramic bowls resting on a wooden studio shelf"
+        class="h-full w-full object-cover"
+        loading="lazy"
+      >
+    </div>
+    <div class="order-1 lg:order-2">
+      <h2 class="font-display text-3xl text-ink sm:text-4xl">How it began</h2>
+      <p class="mt-5 font-body text-base leading-relaxed text-ink/70">
+        Founder Maren Voss started throwing pots after a decade in restaurant kitchens,
+        chasing the same feeling good tableware gave her — food, and the people sharing
+        it, made to feel a little more cared for. What began as weekend batches for
+        friends became a full studio practice in Riverbend, Oregon.
+      </p>
+      <p class="mt-4 font-body text-base leading-relaxed text-ink/70">
+        Today the studio is still small on purpose. Two potters, one kiln, and a
+        waitlist we're proud of — because rushing clay never ends well, and it never
+        will here.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- /block:story -->
+<!-- block:process -->
+<section class="bg-surface" data-block="process">
+  <div class="mx-auto max-w-6xl px-6 py-20 lg:py-24">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-display text-3xl text-ink sm:text-4xl">Our Approach</h2>
+      <p class="mt-4 font-body text-base leading-relaxed text-ink/70">
+        Every piece follows the same unhurried path — one that respects the clay's
+        pace, not a production schedule.
+      </p>
+    </div>
+    <div class="mt-14 grid gap-8 sm:grid-cols-3">
+      <div class="card text-center">
+        <p class="font-display text-2xl text-brand-600">01</p>
+        <h3 class="mt-3 font-display text-xl text-ink">Thrown by Hand</h3>
+        <p class="mt-3 font-body text-sm leading-relaxed text-ink/70">
+          Each form starts as a centered lump of stoneware, shaped on the wheel with
+          no molds and no shortcuts.
+        </p>
+      </div>
+      <div class="card text-center">
+        <p class="font-display text-2xl text-brand-600">02</p>
+        <h3 class="mt-3 font-display text-xl text-ink">Slow Fired</h3>
+        <p class="mt-3 font-body text-sm leading-relaxed text-ink/70">
+          Pieces rest for days before a gentle bisque, then a high stoneware firing
+          that lets glazes settle into real depth.
+        </p>
+      </div>
+      <div class="card text-center">
+        <p class="font-display text-2xl text-brand-600">03</p>
+        <h3 class="mt-3 font-display text-xl text-ink">Finished with Care</h3>
+        <p class="mt-3 font-body text-sm leading-relaxed text-ink/70">
+          Every base is sanded smooth by hand and inspected before it ever reaches
+          your table.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:process -->
+<!-- block:values -->
+<section class="bg-surface-alt" data-block="values">
+  <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:py-24">
+    <div>
+      <h2 class="font-display text-3xl text-ink sm:text-4xl">Our Commitment</h2>
+      <p class="mt-5 font-body text-base leading-relaxed text-ink/70">
+        We use locally sourced stoneware clay, lead-free glazes, and a kiln fired on
+        renewable electricity whenever the grid allows. Nothing leaves the studio
+        without our hands on it first.
+      </p>
+      <ul class="mt-6 space-y-3 font-body text-sm text-ink/80">
+        <li class="flex items-start gap-3">
+          <span class="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-brand-500"></span>
+          Small batches — never mass produced
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-brand-500"></span>
+          Food-safe, lead-free glazes on every piece
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-brand-500"></span>
+          Imperfections left in, because handmade should look handmade
+        </li>
+      </ul>
+      <a href="/shop" class="btn mt-8">Shop the Collection</a>
+    </div>
+    <div class="overflow-hidden rounded-lg">
+      <img
+        src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?auto=format&fit=crop&w=1200&q=80"
+        alt="Close-up texture of a hand-glazed ceramic mug in natural light"
+        class="h-full w-full object-cover"
+        loading="lazy"
+      >
+    </div>
+  </div>
+</section>
+<!-- /block:values -->
+<!-- block:signup -->
+<section class="bg-surface" data-block="signup">
+  <div class="mx-auto max-w-2xl px-6 py-20 text-center lg:py-24">
+    <h2 class="font-display text-3xl text-ink sm:text-4xl">Stay Close to the Studio</h2>
+    <p class="mt-4 font-body text-base leading-relaxed text-ink/70">
+      Join our list for new glaze releases, studio notes, and first access to
+      small-batch drops before they reach the shop.
+    </p>
+    <form method="POST" action="https://api.tibly.ai/api/public/site-forms" class="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+      <input type="hidden" name="_page" value="/about">
+      <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label for="about-email" class="sr-only">Email address</label>
+      <input
+        id="about-email"
+        type="email"
+        name="email"
+        required
+        placeholder="you@example.com"
+        class="w-full rounded-md border border-brand-300 bg-surface px-4 py-3 font-body text-sm text-ink placeholder:text-ink/40 focus:border-brand-500 focus:outline-none sm:w-72"
+      >
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+    <p class="mt-3 font-body text-xs text-ink/50">No spam, just clay news — unsubscribe anytime.</p>
+  </div>
+</section>
+<!-- /block:signup -->
+<!-- block:footer -->
+<footer class="bg-surface-alt border-t border-brand-100">
+  <div class="mx-auto grid max-w-6xl gap-10 px-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
+    <div>
+      <p class="font-display text-xl text-ink">Clay &amp; Fire Studio</p>
+      <p class="mt-3 max-w-xs font-body text-sm leading-relaxed text-ink/70">
+        Handthrown pottery, fired slow and finished by hand in our small studio.
+      </p>
+    </div>
+    <div class="font-body text-sm text-ink/80">
+      <p class="mb-3 font-display text-base text-ink">Visit &amp; Contact</p>
+      <p>123 Kiln Lane, Riverbend, OR 97001</p>
+      <p class="mt-1">hello@clayandfirestudio.com</p>
+      <p class="mt-1">(555) 012-3456</p>
+    </div>
+    <nav aria-label="Footer">
+      <p class="mb-3 font-display text-base text-ink">Explore</p>
+      <ul class="space-y-2 font-body text-sm text-ink/80">
+        <li><a href="/" class="transition-colors hover:text-brand-600">Home</a></li>
+        <li><a href="/shop" class="transition-colors hover:text-brand-600">Shop</a></li>
+        <li><a href="/about" class="transition-colors hover:text-brand-600">About</a></li>
+        <li><a href="/contact" class="transition-colors hover:text-brand-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-brand-100 px-6 py-5 text-center font-body text-xs text-ink/60">
+    &copy; 2024 Clay &amp; Fire Studio. All pieces made by hand, imperfections included.
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
