@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clay & Fire Studio | Handthrown Pottery Made Slow</title>
+<meta name="description" content="Clay & Fire Studio crafts handthrown pottery — mugs, bowls, vases — fired slow and finished by hand in our small Riverbend studio. Shop the collection or join our list.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-brand-50: #FAF6F1;
+  --color-brand-100: #F3E9DD;
+  --color-brand-200: #E6D2BB;
+  --color-brand-300: #D9BA99;
+  --color-brand-400: #CBA277;
+  --color-brand-500: #A67C52;
+  --color-brand-600: #8F6A44;
+  --color-brand-700: #785837;
+  --color-brand-800: #61462B;
+  --color-brand-900: #4A351F;
+
+  --color-accent-50: #FBF3EA;
+  --color-accent-100: #F5E4D0;
+  --color-accent-200: #EBCBA6;
+  --color-accent-300: #E1B27C;
+  --color-accent-400: #D4A574;
+  --color-accent-500: #C68F52;
+  --color-accent-600: #A8763E;
+  --color-accent-700: #8A5F32;
+  --color-accent-800: #6C4926;
+  --color-accent-900: #4E341A;
+
+  --color-surface: #FAFAF8;
+  --color-surface-alt: #F5F1ED;
+  --color-ink: #3D3D3A;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Lato", sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block rounded-md bg-brand-600 px-6 py-3 font-body text-sm tracking-wide text-surface transition-colors duration-200 hover:bg-brand-700;
+  }
+  .btn-secondary {
+    @apply inline-block rounded-md border border-brand-400 bg-transparent px-6 py-3 font-body text-sm tracking-wide text-ink transition-colors duration-200 hover:bg-brand-50;
+  }
+  .card {
+    @apply rounded-lg bg-surface-alt p-6 shadow-sm;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="bg-surface border-b border-brand-100">
+  <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-5 sm:flex-row">
+    <a href="/" class="font-display text-2xl tracking-wide text-ink">Clay &amp; Fire Studio</a>
+    <nav aria-label="Primary">
+      <ul class="flex flex-wrap items-center justify-center gap-6 font-body text-sm uppercase tracking-widest text-ink/80">
+        <li><a href="/" class="transition-colors hover:text-brand-600">Home</a></li>
+        <li><a href="/shop" class="transition-colors hover:text-brand-600">Shop</a></li>
+        <li><a href="/about" class="transition-colors hover:text-brand-600">About</a></li>
+        <li><a href="/contact" class="transition-colors hover:text-brand-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:hero -->
+<section class="relative bg-surface" data-block="hero">
+  <div class="mx-auto grid max-w-6xl items-center gap-10 px-6 py-16 sm:py-20 lg:grid-cols-2 lg:py-28">
+    <div class="order-2 lg:order-1">
+      <p class="font-body text-sm uppercase tracking-[0.2em] text-brand-600">Small-batch pottery</p>
+      <h1 class="mt-4 font-display text-4xl leading-tight text-ink sm:text-5xl lg:text-6xl">
+        Vessels shaped by hand, warmed by fire.
+      </h1>
+      <p class="mt-6 max-w-md font-body text-base leading-relaxed text-ink/70 sm:text-lg">
+        Every mug, bowl, and vase we make begins on the wheel and ends in a slow wood-fired kiln —
+        no two pieces are ever quite the same.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="/shop" class="btn">Shop the Collection</a>
+        <a href="/about" class="btn-secondary">Our Story</a>
+      </div>
+    </div>
+    <div class="order-1 lg:order-2">
+      <img
+        src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1200&q=80"
+        alt="Warm-toned handthrown ceramic bowls and mugs arranged on a wooden table in natural light"
+        class="aspect-[4/5] w-full rounded-lg object-cover shadow-sm"
+      >
+    </div>
+  </div>
+</section>
+<!-- /block:hero -->
+<!-- block:offer -->
+<section class="bg-surface-alt" data-block="offer">
+  <div class="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-display text-3xl text-ink sm:text-4xl">Made for everyday ritual</h2>
+      <p class="mt-4 font-body text-base leading-relaxed text-ink/70">
+        We throw, trim, and glaze each piece by hand in small batches, so your morning coffee
+        and dinner table feel a little more grounded.
+      </p>
+    </div>
+    <div class="mt-12 grid gap-6 sm:grid-cols-3">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80"
+          alt="A hand-glazed ceramic mug in warm terracotta tones"
+          class="aspect-square w-full rounded-md object-cover"
+        >
+        <h3 class="mt-5 font-display text-xl text-ink">Mugs &amp; Cups</h3>
+        <p class="mt-2 font-body text-sm leading-relaxed text-ink/70">
+          Weighted just right, warm in the hand, glazed in earthy tones.
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1610701596279-e17a58e2e07a?auto=format&fit=crop&w=800&q=80"
+          alt="Stacked handmade ceramic bowls in soft neutral glazes"
+          class="aspect-square w-full rounded-md object-cover"
+        >
+        <h3 class="mt-5 font-display text-xl text-ink">Bowls &amp; Plates</h3>
+        <p class="mt-2 font-body text-sm leading-relaxed text-ink/70">
+          Everyday dinnerware built to hold a good meal and a bit of soul.
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=800&q=80"
+          alt="A tall handthrown ceramic vase with dried flowers"
+          class="aspect-square w-full rounded-md object-cover"
+        >
+        <h3 class="mt-5 font-display text-xl text-ink">Vases &amp; Decor</h3>
+        <p class="mt-2 font-body text-sm leading-relaxed text-ink/70">
+          Sculptural pieces that bring texture and warmth to any room.
+        </p>
+      </div>
+    </div>
+    <div class="mt-10 text-center">
+      <a href="/shop" class="btn">View All Pieces</a>
+    </div>
+  </div>
+</section>
+<!-- /block:offer -->
+<!-- block:social-proof -->
+<section class="bg-surface" data-block="social-proof">
+  <div class="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+    <h2 class="text-center font-display text-3xl text-ink sm:text-4xl">Loved in kitchens &amp; studios alike</h2>
+    <div class="mt-12 grid gap-8 sm:grid-cols-3">
+      <blockquote class="card">
+        <p class="font-body text-sm leading-relaxed text-ink/80">
+          "The glaze on my mug catches the morning light so beautifully — I look forward to my
+          coffee just to hold it."
+        </p>
+        <footer class="mt-4 font-body text-sm font-semibold text-ink">Marisol T.</footer>
+      </blockquote>
+      <blockquote class="card">
+        <p class="font-body text-sm leading-relaxed text-ink/80">
+          "Ordered a set of bowls for our wedding registry. They arrived carefully packed and
+          every single one is a small work of art."
+        </p>
+        <footer class="mt-4 font-body text-sm font-semibold text-ink">Devon R.</footer>
+      </blockquote>
+      <blockquote class="card">
+        <p class="font-body text-sm leading-relaxed text-ink/80">
+          "You can feel the craftsmanship in every piece. It's rare to find pottery this
+          thoughtful at a fair price."
+        </p>
+        <footer class="mt-4 font-body text-sm font-semibold text-ink">Priya K.</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+<!-- /block:social-proof -->
+<!-- block:signup -->
+<section class="bg-brand-800" data-block="signup">
+  <div class="mx-auto max-w-3xl px-6 py-16 text-center sm:py-20">
+    <h2 class="font-display text-3xl text-surface sm:text-4xl">Join the studio list</h2>
+    <p class="mt-4 font-body text-base leading-relaxed text-surface/80">
+      New collections, kiln stories, and first access to limited pieces — straight to your inbox,
+      no spam, ever.
+    </p>
+    <form
+      method="POST"
+      action="https://api.tibly.ai/api/public/site-forms"
+      class="mx-auto mt-8 flex max-w-md flex-col gap-4 sm:flex-row sm:gap-3"
+    >
+      <input type="hidden" name="_page" value="/index">
+      <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label for="home-email" class="sr-only">Email address</label>
+      <input
+        id="home-email"
+        type="email"
+        name="email"
+        required
+        placeholder="you@example.com"
+        class="w-full rounded-md border border-brand-400 bg-surface px-4 py-3 font-body text-sm text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-accent-400 sm:flex-1"
+      >
+      <button type="submit" class="btn shrink-0">Sign Up</button>
+    </form>
+    <p class="mt-4 font-body text-xs text-surface/60">We send a few emails a month, at most.</p>
+  </div>
+</section>
+<!-- /block:signup -->
+<!-- block:footer -->
+<footer class="bg-surface-alt border-t border-brand-100">
+  <div class="mx-auto grid max-w-6xl gap-10 px-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
+    <div>
+      <p class="font-display text-xl text-ink">Clay &amp; Fire Studio</p>
+      <p class="mt-3 max-w-xs font-body text-sm leading-relaxed text-ink/70">
+        Handthrown pottery, fired slow and finished by hand in our small studio.
+      </p>
+    </div>
+    <div class="font-body text-sm text-ink/80">
+      <p class="mb-3 font-display text-base text-ink">Visit &amp; Contact</p>
+      <p>123 Kiln Lane, Riverbend, OR 97001</p>
+      <p class="mt-1">hello@clayandfirestudio.com</p>
+      <p class="mt-1">(555) 012-3456</p>
+    </div>
+    <nav aria-label="Footer">
+      <p class="mb-3 font-display text-base text-ink">Explore</p>
+      <ul class="space-y-2 font-body text-sm text-ink/80">
+        <li><a href="/" class="transition-colors hover:text-brand-600">Home</a></li>
+        <li><a href="/shop" class="transition-colors hover:text-brand-600">Shop</a></li>
+        <li><a href="/about" class="transition-colors hover:text-brand-600">About</a></li>
+        <li><a href="/contact" class="transition-colors hover:text-brand-600">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-brand-100 px-6 py-5 text-center font-body text-xs text-ink/60">
+    &copy; 2024 Clay &amp; Fire Studio. All pieces made by hand, imperfections included.
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
